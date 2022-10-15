@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './components/Card';
 import Carro from './components/Carro';
+import Counter from './components/Counter';
 
 function App() {
   const name = 'João'
@@ -34,6 +35,8 @@ function App() {
         marca = "Fiati"
       />
       <Carro />
+      <h1>Contador</h1>
+      <Counter />
     </div>
   );
 }

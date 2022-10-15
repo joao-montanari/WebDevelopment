@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    font-size: larger;
+}
+
+.container button{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+}
+
+.container button:hover{
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 .container{
     margin: auto;
     width: 300px;
-    height: 250px;
+    height: 300px;
     display: grid;
     border-radius: 5px;
     border: 1px solid #000;
