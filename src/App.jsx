@@ -20,13 +20,11 @@ function App() {
         Soma de dois números: {soma(2,8)}
       </p>
       <h3>O nome do usuário é: {NameUpper}</h3>
-      <h2>Imagem de parfil:</h2>
-      <img src={url} alt="Imagem teste" />
       <Card
         name="João Vitor Montanari"
         age="19"
         profession="Médico"
-        photo="https://via.placeholder.com/130"
+        photo="https://via.placeholder.com/200x130"
       />
     </div>
   );
