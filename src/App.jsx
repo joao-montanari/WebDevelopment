@@ -1,4 +1,5 @@
 import './App.css';
+import Card from './components/Card';
 
 function App() {
   const name = 'João'
@@ -18,9 +19,10 @@ function App() {
       <p>
         Soma de dois números: {soma(2,8)}
       </p>
-      <h3>Nome maiusculo: {NameUpper}</h3>
-      <h2>IMAGEM:</h2>
+      <h3>O nome do usuário é: {NameUpper}</h3>
+      <h2>Imagem de parfil:</h2>
       <img src={url} alt="Imagem teste" />
+      <Card />
     </div>
   );
 }
