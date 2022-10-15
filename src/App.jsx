@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './components/Card';
+import Carro from './components/Carro';
 
 function App() {
   const name = 'João'
@@ -23,9 +24,16 @@ function App() {
       <Card
         name="João Vitor Montanari"
         age="19"
-        profession="Médico"
+        profession="Programador"
         photo="https://via.placeholder.com/200x130"
       />
+
+      <h1>Marcas de carro</h1>
+      <Carro
+        ano_lancamento={2005}
+        marca = "Fiati"
+      />
+      <Carro />
     </div>
   );
 }

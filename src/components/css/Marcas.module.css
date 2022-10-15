@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    width: 300px;
+    margin: 20px auto;
+    color: #0000FF;
+    border: 1px solid #0000FF;
+}
