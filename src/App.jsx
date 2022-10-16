@@ -3,16 +3,34 @@ import Card from './components/Card';
 import Carro from './components/Carro';
 import Counter from './components/Counter';
 import Form from './components/Form';
+import Button from './components/Button';
+import Email from './components/Email';
 
 function App() {
   const name = 'João'
   const NameUpper = name.toUpperCase()
   const url = 'https://via.placeholder.com/150'
 
-  function soma(a, b){
+  const pessoa = {
+    nome : 'Jorge',
+    idade : 17,
+    cidade : 'Rio Preto',
+    profissao : 'Carpinteiro',
+    foto : 'https://via.placeholder.com/200x130'
+  }
+
+  function Soma(a, b){
     return(
       a + b
     );
+  }
+
+  function EventoUm(){
+    console.log('Passando Evento 01')
+  }
+
+  function EventoDois(){
+    console.log('Passando Evento 02')
   }
 
   return (
@@ -20,14 +38,14 @@ function App() {
       <h1>Hello World</h1>
       <h3>Ola {name}</h3>
       <p>
-        Soma de dois números: {soma(2,8)}
+        Soma de dois números: {Soma(2,8)}
       </p>
       <h3>O nome do usuário é: {NameUpper}</h3>
       <Card
-        name="João Vitor Montanari"
-        age="19"
-        profession="Programador"
-        photo="https://via.placeholder.com/200x130"
+        name = {pessoa.nome}
+        age = {pessoa.idade}
+        profession = {pessoa.profissao}
+        photo = {pessoa.foto}
       />
 
       <h1>Marcas de carro</h1>
@@ -39,6 +57,13 @@ function App() {
       <h1>Contador</h1>
       <Counter />
       <Form />
+      <Button
+        event={EventoUm}
+      />
+      <Button
+        event={EventoDois}
+      />
+      <Email />
     </div>
   );
 }
