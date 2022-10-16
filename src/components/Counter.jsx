@@ -8,10 +8,17 @@ function Counter(){
         setCont(contador + 1)
     }
 
+    function zerarCont(){
+        setCont(1)
+    }
+
     return(
         <div className={Styles.container}>
             <label>{contador}</label>
-            <button onClick={addCont}>Adicionar</button>
+            <div claasName={Styles.child}>
+                <button onClick={addCont}>Adicionar</button>
+                <button onClick={zerarCont}>Zerar</button>
+            </div>
         </div>
     )
 }

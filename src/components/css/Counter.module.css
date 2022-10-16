@@ -12,3 +12,10 @@
 .container button:hover{
     cursor: pointer;
 }
+
+.child{
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+}
