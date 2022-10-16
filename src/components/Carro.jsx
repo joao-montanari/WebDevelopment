@@ -1,4 +1,4 @@
-import Styles from './css/Marcas.module.css';
+import Styles from './css/Carro.module.css';
 import PropTypes from 'prop-types'
 
 function Carro(props){

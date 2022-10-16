@@ -2,6 +2,7 @@ import './App.css';
 import Card from './components/Card';
 import Carro from './components/Carro';
 import Counter from './components/Counter';
+import Form from './components/Form';
 
 function App() {
   const name = 'João'
@@ -37,6 +38,7 @@ function App() {
       <Carro />
       <h1>Contador</h1>
       <Counter />
+      <Form />
     </div>
   );
 }
