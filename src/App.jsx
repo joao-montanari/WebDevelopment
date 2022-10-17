@@ -5,6 +5,8 @@ import Counter from './components/Counter';
 import Form from './components/Form';
 import Button from './components/Button';
 import Email from './components/Email';
+import Test from './components/Test';
+
 
 function App() {
   const name = 'João'
@@ -64,6 +66,7 @@ function App() {
         event={EventoDois}
       />
       <Email />
+      <Test />
     </div>
   );
 }
