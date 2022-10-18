@@ -5,7 +5,7 @@ import Counter from './components/Counter';
 import Form from './components/Form';
 import Button from './components/Button';
 import Email from './components/Email';
-import Test from './components/Test';
+import List from './components/List';
 
 
 function App() {
@@ -20,6 +20,37 @@ function App() {
     profissao : 'Carpinteiro',
     foto : 'https://via.placeholder.com/200x130'
   }
+
+  const cidades = [
+    {
+      id : 0,
+      nome : "Campinas",
+      estado : "SP",
+      populacao : 1.223,
+      prefeito : "Dário Jorge Giolo Saadi"
+    },
+    {
+      id : 1,
+      nome : "São Paulo",
+      estado : "SP",
+      populacao : 12.33,
+      prefeito : "Ricardo Nunes"
+    },
+    {
+      id : 2,
+      nome : "Rio de Janeiro",
+      estado : "RJ",
+      populacao : 6.748,
+      prefeito : "Eduardo Paes"
+    },
+    {
+      id : 3,
+      nome : "Praia Grande",
+      estado : "SP",
+      populacao : 330.84,
+      prefeito : "Raquel Chini"
+    }
+  ]
 
   function Soma(a, b){
     return(
@@ -56,8 +87,10 @@ function App() {
         marca = "Fiati"
       />
       <Carro />
+
       <h1>Contador</h1>
       <Counter />
+
       <Form />
       <Button
         event={EventoUm}
@@ -65,8 +98,11 @@ function App() {
       <Button
         event={EventoDois}
       />
+      <h1>Formulário de Email</h1>
       <Email />
-      <Test />
+
+      <h1>Renderização de Lista</h1>
+      <List lista = {cidades} />
     </div>
   );
 }
